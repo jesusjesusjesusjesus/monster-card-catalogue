@@ -16,4 +16,3 @@ monster_14 = {"ID": 14, "name": "", "strength": 0, "speed": 0, "stealth": 0, "cu
 monster_15 = {"ID": 15, "name": "", "strength": 0, "speed": 0, "stealth": 0, "cunning": 0, filled_out: 0}
 monsters_list = [monster_1, monster_2, monster_3, monster_4, monster_5, monster_6, monster_7, monster_8, monster_9,
                  monster_10, monster_11, monster_12, monster_13, monster_14, monster_15]
-
