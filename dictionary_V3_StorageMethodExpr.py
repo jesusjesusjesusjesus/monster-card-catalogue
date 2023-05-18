@@ -1,4 +1,3 @@
-data_chkd = False
 monsters = {
     1: {"ID": 1, "name": "Stoneling", "strength": 7, "speed": 1, "stealth": 25, "cunning": 15, "filled_out": "1"},
     2: {"ID": 2, "name": "Vexscream", "strength": 1, "speed": 6, "stealth": 21, "cunning": 19, "filled_out": "1"},
@@ -16,11 +15,3 @@ monsters = {
     14: {"ID": 14, "name": "", "strength": 0, "speed": 0, "stealth": 0, "cunning": 0, "filled_out": "0"},
     15: {"ID": 15, "name": "", "strength": 0, "speed": 0, "stealth": 0, "cunning": 0, "filled_out": "0"}
             }
-
-while not data_chkd:
-    for key in monsters:
-        if monsters[key]["filled_out"] == "1":
-            print(f"{key}:\n name = {monsters[key]['name']},\n strength = {monsters[key]['strength']},\n"
-                  f" speed = {monsters[key]['speed']},\n stealth = {monsters[key]['stealth']},\n"
-                  f" cunning = {monsters[key]['cunning']}")
-            data_chkd = True
