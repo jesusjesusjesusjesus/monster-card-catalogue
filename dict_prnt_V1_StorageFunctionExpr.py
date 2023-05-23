@@ -1,3 +1,5 @@
+import easygui
+
 data_chkd = False
 monsters = {
     1: {"ID": 1, "name": "Stoneling", "strength": 7, "speed": 1, "stealth": 25, "cunning": 15, "filled_out": "1"},
@@ -20,7 +22,7 @@ monsters = {
 while not data_chkd:
     for key in monsters:
         if monsters[key]["filled_out"] == "1":
-            print(f"{key}:\n name = {monsters[key]['name']},\n strength = {monsters[key]['strength']},\n"
+            easygui.textbox(f"{key}:\n name = {monsters[key]['name']},\n strength = {monsters[key]['strength']},\n"
                   f" speed = {monsters[key]['speed']},\n stealth = {monsters[key]['stealth']},\n"
                   f" cunning = {monsters[key]['cunning']}")
             data_chkd = True
