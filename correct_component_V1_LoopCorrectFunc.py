@@ -13,7 +13,7 @@ while not made_decision:
 
 
 while code_run == True:
-    if 0 < usr_main_choice < 5 :
+    if 0 < usr_main_choice < 5:
         while not made_decision:
             usr_main_choice = easygui.buttonbox("Which action would you like to preform?", "Option select",
                                                 usr_main_opts)
@@ -26,5 +26,5 @@ while code_run == True:
             if usr_main_choice == "Print all cards":
                 usr_main_choice_int = 4
             made_decision = easygui.boolbox(f"you have chose {usr_main_choice}, is this correct?")
-    # Relevent code
+    # Relevant code
     usr_main_choice == 0
