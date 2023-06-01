@@ -134,7 +134,7 @@ while game_play:
         if usr_welcm_choice == None:
             easygui.msgbox("Please choose an action\n(if you dont want to preform any function just press "
                            "'End program'")
-        if 0 < usr_welcm_choice_int < 6:
+        if 0 < usr_welcm_choice_int < 6 and not None:
             made_decision_welcm = easygui.boolbox(f"You have chosen {usr_welcm_choice}, is this correct?")
 
     if usr_welcm_choice_int == 1:
@@ -204,6 +204,10 @@ while game_play:
             if usr_sure == "No":
                 correct_cmpt = False
                 # back to the home screen
+        numbers_int = ["", 0, 0, 0, 0]
+        numbers_str = ["", "", "", "", ""]
+        valid_numbers = []
+        frst_emty_enty = 0
     made_decision_welcm = False
     if usr_welcm_choice_int == 2:
         while function_use:
@@ -245,7 +249,15 @@ while game_play:
                     print(monsters)
             if correct_callback == "no":
                 function_use = False
-            made_decision_welcm = False
+                made_decision_welcm = False
+        monster_names_lst = []
+        monster_name_int = 0
+        correct_callback = ""
+        incorrect_attribute = ""
+        monster_attribute_int = 0
+        function_use = True
+        search_func = ""
+
     if usr_welcm_choice_int == 3:
         easygui.msgbox("You have chosen to delete a card")
         for key in monsters:
@@ -285,7 +297,11 @@ while game_play:
                 else:
                     easygui.msgbox("No filled-out monster cards found.")
                 delete_sure = False
-            made_decision_welcm = False
+        made_decision_welcm = False
+        monster_names = []
+        search_func = ""
+        monster_int = 0
+        card_info = ""
     if usr_welcm_choice_int == 4:
         while function_use:
             easygui.msgbox("You have chosen to print all filled-out monster cards")
