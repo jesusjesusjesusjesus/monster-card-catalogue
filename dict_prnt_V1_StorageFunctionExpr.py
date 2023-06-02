@@ -23,6 +23,6 @@ while not data_chkd:
     for key in monsters:
         if monsters[key]["filled_out"] == "1":
             easygui.textbox(f"{key}:\n name = {monsters[key]['name']},\n strength = {monsters[key]['strength']},\n"
-                  f" speed = {monsters[key]['speed']},\n stealth = {monsters[key]['stealth']},\n"
-                  f" cunning = {monsters[key]['cunning']}")
+                            f" speed = {monsters[key]['speed']},\n stealth = {monsters[key]['stealth']},\n"
+                            f" cunning = {monsters[key]['cunning']}")
             data_chkd = True
